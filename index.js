@@ -103,6 +103,26 @@ $(()=> {
         }
     ]
     card.map((val) => {
-        let card_temp ;
+        let card_temp =
+        `
+        <div class="card">
+                    <div class="info">
+                        <p class='back_number'>${val['back_number']}</p>
+                        <p class='name'>${val['name']}</p>
+                        <p class='position'>${val['position']}</p>
+                        <p class='hand'>${val['hand']}</p>
+                        <p class='birth'>${val['birth']}</p>
+                    </div>
+                    <div class="photo">
+                        <img src="${val['url']}">
+                    </div>
+                </div>
+        `
+        $('.cards').append(card_temp);
+    })
+
+
+    $('.card').on('mouseover', function() {
+        alert('ㅆㅣ발 카뱅');
     })
 })

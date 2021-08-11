@@ -39,7 +39,7 @@ th { border-bottom: 1px solid #999; }
     flex-direction: row;
 
 }
-.card div { border: 1px solid red;}
+/* .card div { border: 1px solid red;} */
 div.info {
     width: 130px;
     height: 225px;
@@ -47,6 +47,7 @@ div.info {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color:whitesmoke;
 }
 .info p { margin: 0;}
 .back_number { font-size: 23px; font-weight: bold; letter-spacing: 3px;}
